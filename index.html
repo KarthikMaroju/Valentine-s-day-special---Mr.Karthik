@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Valentine Surprise 💖</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hearts"></div>
+
+<!-- STEP 1 -->
+<div class="card" id="step1">
+  <h2 class="typing">Enter His Name ❤️</h2>
+  <input id="hisName" placeholder="Type here">
+  <button onclick="checkName()">Next</button>
+  <p id="error"></p>
+</div>
+
+<!-- STEP 2 -->
+<div class="card hidden" id="step2">
+  <h2 class="typing">Enter Her Name 💕</h2>
+  <input id="herName" placeholder="Her name">
+  <button onclick="askLove()">Continue</button>
+</div>
+
+<!-- STEP 3 -->
+<div class="card hidden" id="step3">
+  <h2>Do you love me? 😍</h2>
+  <button onclick="showGift()">YES 💖</button>
+  <button id="noBtn">NO 😈</button>
+</div>
+
+<!-- STEP 4 -->
+<div class="card hidden" id="gift">
+  <div class="gift" onclick="openGift()">🎁</div>
+  <p>Tap to open</p>
+</div>
+
+<!-- FINAL -->
+<div class="card hidden" id="final">
+  <h1 id="finalText"></h1>
+  <footer>@karthik created 💘</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
