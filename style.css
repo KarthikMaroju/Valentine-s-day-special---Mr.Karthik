@@ -1,0 +1,87 @@
+body{
+  margin:0;
+  height:100vh;
+  background:linear-gradient(135deg,#ff416c,#ff4b2b);
+  font-family:Arial;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+  color:white;
+}
+
+.card{
+  background:rgba(0,0,0,0.35);
+  padding:25px;
+  border-radius:20px;
+  width:300px;
+  text-align:center;
+  z-index:2;
+}
+
+.hidden{display:none;}
+
+input{
+  width:90%;
+  padding:10px;
+  border-radius:10px;
+  border:none;
+  margin:10px 0;
+  text-align:center;
+}
+
+button{
+  padding:10px 20px;
+  border-radius:20px;
+  border:none;
+  cursor:pointer;
+  font-weight:bold;
+  margin:5px;
+}
+
+button:hover{background:white;color:black;}
+
+#error{color:yellow;font-weight:bold;}
+
+.typing{
+  overflow:hidden;
+  white-space:nowrap;
+  border-right:2px solid white;
+  animation:typing 3s steps(30),blink .7s infinite;
+}
+
+@keyframes typing{
+  from{width:0;}
+  to{width:100%;}
+}
+@keyframes blink{
+  50%{border-color:transparent;}
+}
+
+/* Gift */
+.gift{
+  font-size:80px;
+  animation:bounce 1s infinite;
+  cursor:pointer;
+}
+@keyframes bounce{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-12px);}
+}
+
+/* Floating hearts */
+.hearts span{
+  position:fixed;
+  bottom:-40px;
+  font-size:28px;
+  animation:float 6s linear infinite;
+}
+
+@keyframes float{
+  to{transform:translateY(-120vh);opacity:0;}
+}
+
+footer{
+  margin-top:10px;
+  font-size:14px;
+}
