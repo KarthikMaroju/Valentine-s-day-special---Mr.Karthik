@@ -41,6 +41,6 @@ function openGift(){
   gift.classList.add("hidden");
   final.classList.remove("hidden");
   document.getElementById("finalText").innerText =
-    `💖 Happy Valentine’s Day ${her} 💖`;
+    `💖 Happy Birthday Potti ${her} 💖`;
 }
 
